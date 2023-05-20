@@ -1,0 +1,17 @@
+{
+  "name": "prestashop",
+  "version": "1.0.0",
+  "description": "prestashop test",
+  "main": "index.js",
+  "scripts": {
+    "test-chrome": "./node_modules/.bin/cypress run --headed --browser chrome",
+    "test": "./node_modules/.bin/cypress run"   
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "11.0.1"
+  }
+
+}

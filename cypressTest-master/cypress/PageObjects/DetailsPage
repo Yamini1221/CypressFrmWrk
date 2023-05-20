@@ -1,0 +1,18 @@
+class DetailsPage
+{
+
+    getShortDesc(){
+        return cy.get('div#short_description_content p')
+    }
+
+    getAddToCart(){
+        return cy.get('p#add_to_cart button')
+    }
+
+    getAddedMsg(){
+        return cy.get('span.title')
+    }
+
+}
+
+export default DetailsPage

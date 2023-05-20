@@ -1,0 +1,29 @@
+class HomePage
+{
+  getPopularProducts(){
+    return cy.get('li.active a.homefeatured')
+  }
+
+  getTotalProducts(){
+    return cy.get('ul#homefeatured div.product-container')
+  }
+
+  getSearch(){
+    return cy.get('#search_query_top')
+  }
+
+  getSubmit(){
+    return cy.get('button[type=submit]')
+  }
+
+  getProductName(){
+    return cy.get('ul#product_list').find('div.right-block a')
+  }
+
+  navigateProdDetails(){
+    return cy.get('ul#product_list').find('div.right-block a[tilte=Blouse]')
+  }
+
+}
+
+export default HomePage
